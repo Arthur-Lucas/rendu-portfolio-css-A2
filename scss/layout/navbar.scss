@@ -76,7 +76,7 @@ body {
           transition-delay: 0s;
           > a {
             text-decoration: none;
-            font-size: 30px;
+            font-size: 20px;
             text-transform: uppercase;
             color: $blackColor;
             font-weight: 700;
@@ -101,8 +101,10 @@ body {
 
 @media screen and (max-width:980px){
 
-    h1{
-        display: none;
+    body h1{
+        font-size: 15px;
+        top: 29px;
+        left: 15px;
     }
 
     body input ~ nav > ul {
