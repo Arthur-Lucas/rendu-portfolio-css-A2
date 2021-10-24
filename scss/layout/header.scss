@@ -1,0 +1,15 @@
+header{
+    background-image: url(image/pole.jpg);
+    display: flex;
+    background-position: 100% 25%;
+    background-size: cover;
+    height: 60vh;
+    width: 100%;
+}
+
+@include xl{
+    header{
+        background-position: 60% 100%;
+        margin-bottom: -180px;
+    }
+}

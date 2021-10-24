@@ -1,4 +1,12 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
 @import "scss/abstract/variables",
         "scss/abstract/mixins",
-        "scss/layout/navbar";
+        "scss/components/navbar",
+        "scss/layout/header",
+        "scss/layout/content",
+        "scss/layout/footer";
 
