@@ -1,4 +1,4 @@
-body section{
+body .home{
     text-decoration: none;
     background-color: $backgroundColor;
     font-size: 20px;
@@ -10,7 +10,7 @@ body section{
     grid-template-rows: 100px 300px 200px 200px 200px 250px;
 }
 
-body section div {
+body .home div {
     font-family: 'Open Sans', sans-serif;
     display: flex;
     align-items: center;
