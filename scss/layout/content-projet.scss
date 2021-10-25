@@ -1,8 +1,10 @@
 body .projet{
+    font-family: 'Open Sans', sans-serif;
     margin: 50px 200px;
-    padding: 20px 50px 20px 0px;
-    border: 2px solid $mainColor;
-    border-radius: 20px;
+    padding: 20px 50px;
+    border: 2px solid #FFE7CC;
+    border-radius: 10px;
+    background-color: #FFE7CC;
     display: grid;
     grid-template-columns: 1fr 1fr ;
     grid-template-rows: 150px 150px 150px 150px 150px 150px 150px 150px ;
@@ -12,10 +14,8 @@ body .projet .iframe{
     min-height: 500px;
 }
 
-.content{
-
-    font-family: 'Open Sans', sans-serif;
-
+.title{
+    display: none;
 }
 
 .content1, .content3, .content4, .content6, .content7, .content9, .content10, .content12{
@@ -68,9 +68,60 @@ body .projet .iframe{
     align-items: center;
 }
 
-.redirect:hover{
-    .content1{
-        background-color: black;
+
+@include xl{
+
+    body .projet{
+        margin: 0px;
+        padding: 20px 0px;
+        background-color: $backgroundColor;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .image{
+            display: block;
+            img{
+                width: 300px;
+            }
+            
+        }
+        a{
+            padding: 0px;
+            margin: -20px 0px 20px 0px;
+            .redirect > img{
+                width: 50px;
+                
+            }
+        }
+    }
+
+    .content2, .content5, .content8, .content11{
+        display: none;
+    }
+
+    .title{
+        color: white;
+        display: block;
+        
+    }
+
+    .title1{
+        position: absolute;
+        top: 41%;
+    }
+    .title2{
+        position: absolute;
+        top: 73%;
+    }
+
+    .title3{
+        position: absolute;
+        top: 100%;
+    }
+    .title4{
+        position: absolute;
+        top: 131%;
     }
     
 }

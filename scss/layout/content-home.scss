@@ -78,21 +78,23 @@ body .home div {
 
 body section div > a {
     text-decoration: none;
+    color: black;
 }
 
 @include xl{
-    body section {
+    body .home {
         padding: 0px;
         display: block;
+        .item5 {
+            display: none;
+        }
     }
 
     .item1{
         padding: 30px 0px 0px 30px;
     }
 
-    .item5 {
-        display: none;
-    }
+    
 
     .item8{
         flex-direction: column;
