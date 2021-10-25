@@ -1,0 +1,44 @@
+body .cv{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+body .compet1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 50px;
+    background-color: $backgroundColor;
+    font-family: 'Open Sans', sans-serif;
+    p{
+        font-size: 24px;
+    }
+    
+    .seed1    img {
+        width: 800px;
+        margin: 20px;
+    }
+    
+}
+
+body .compet2{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 50px;
+    background-color: $backgroundColor;
+    font-family: 'Open Sans', sans-serif;
+    p{
+        font-size: 24px;
+    }
+    
+    .block1    img {
+        width: 800px;
+        margin: 20px;
+    }
+    .block2{
+        text-align: end;
+    }
+}

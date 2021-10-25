@@ -116,6 +116,12 @@ body section {
     left: 10%;
   }
 }
+.btn {
+  cursor: pointer;
+  color: white;
+  background-color: #FE9F34;
+}
+
 header {
   background-image: url(image/pole.jpg);
   display: flex;
@@ -198,12 +204,6 @@ body .home div {
   justify-content: space-evenly;
   grid-column: 1/-1;
   grid-row: 7/8;
-}
-
-.btn {
-  cursor: pointer;
-  color: white;
-  background-color: #FE9F34;
 }
 
 body section div > a {
@@ -354,6 +354,47 @@ body .projet .iframe {
     top: 131%;
   }
 }
+body .cv {
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+body .compet1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 50px;
+  background-color: #FFFDFA;
+  font-family: "Open Sans", sans-serif;
+}
+body .compet1 p {
+  font-size: 24px;
+}
+body .compet1 .seed1 img {
+  width: 800px;
+  margin: 20px;
+}
+
+body .compet2 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 50px;
+  background-color: #FFFDFA;
+  font-family: "Open Sans", sans-serif;
+}
+body .compet2 p {
+  font-size: 24px;
+}
+body .compet2 .block1 img {
+  width: 800px;
+  margin: 20px;
+}
+body .compet2 .block2 {
+  text-align: end;
+}
+
 footer {
   background-color: black;
   width: 100%;
