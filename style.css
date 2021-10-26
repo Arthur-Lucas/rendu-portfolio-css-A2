@@ -397,13 +397,30 @@ body .compet2 .block2 {
   text-align: end;
 }
 
+body {
+  background-color: #FFFDFA;
+}
 body .pres {
   font-family: "Open Sans", sans-serif;
+  margin: 20px;
 }
 body .pres video {
   width: 50%;
 }
+body .pres .compet1 {
+  background-color: #FFE7CC;
+  border-radius: 10px;
+}
+body .pres .compet1 p {
+  color: white;
+  text-shadow: 5px 2px 10px black;
+  position: relative;
+  left: -15%;
+}
 body .pres h2 {
+  margin: 40px;
+  padding: 20px;
+  background-color: #FFE7CC;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -424,6 +441,28 @@ body .pres .arrow-pres {
   cursor: pointer;
 }
 
+@media screen and (max-width: 980px) {
+  body .pres {
+    margin: 200px 20px 20px 20px;
+  }
+  body .pres .compet1 {
+    margin: 50px 10px;
+    background-color: #FFFDFA;
+  }
+  body .pres .compet1 .seed1 {
+    display: none;
+  }
+  body .pres .compet1 p {
+    line-height: 35px;
+    color: black;
+    position: static;
+    text-shadow: none;
+    text-align: center;
+  }
+  body .pres .gallery_video {
+    width: 90%;
+  }
+}
 footer {
   background-color: black;
   width: 100%;
