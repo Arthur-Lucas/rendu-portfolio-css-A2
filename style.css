@@ -471,6 +471,15 @@ body .pres .arrow-pres {
   body .pres .gallery_video {
     width: 90%;
   }
+  body .pres hr {
+    display: none;
+  }
+  body .pres .sovereign-image img {
+    width: 110%;
+  }
+  body .pres .secret-image {
+    display: none;
+  }
 }
 footer {
   background-color: black;
