@@ -409,6 +409,7 @@ body .pres video {
 }
 body .pres .compet1 {
   background-color: #FFE7CC;
+  padding: 10px;
   border-radius: 10px;
 }
 body .pres .compet1 p {
@@ -416,6 +417,10 @@ body .pres .compet1 p {
   text-shadow: 5px 2px 10px black;
   position: relative;
   left: -15%;
+}
+body .pres .compet1 .image-sog {
+  padding: 70px 0px;
+  background-color: black;
 }
 body .pres h2 {
   margin: 40px;
@@ -431,6 +436,10 @@ body .pres .carousel {
   align-items: center;
   margin: 50px 0px;
   min-height: 100px;
+}
+body .pres .carousel iframe {
+  width: 560px;
+  height: 315px;
 }
 body .pres .gallery_video {
   width: 50%;
