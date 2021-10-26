@@ -30,6 +30,7 @@ body .projet .iframe{
 .image{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .content1{
@@ -50,12 +51,14 @@ body .projet .iframe{
 }
 
 
-.img1, .img4{
+
+.img1, .img2, .img3, .img4{
     width: 490px; 
 }
 
-.img2, .img3{
-    width: 530px;
+.img2{
+    max-height: 200px;
+
 }
 
 .arrow{
