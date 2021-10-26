@@ -397,6 +397,22 @@ body .compet2 .block2 {
   text-align: end;
 }
 
+@media screen and (max-width: 980px) {
+  body .cv {
+    margin-top: 200px;
+  }
+
+  body .compet1, .compet2 {
+    display: flex;
+    flex-direction: column;
+  }
+  body .compet1 .seed2, body .compet1 .block2, .compet2 .seed2, .compet2 .block2 {
+    text-align: center !important;
+  }
+  body .compet1 img, .compet2 img {
+    display: none;
+  }
+}
 body {
   background-color: #FFFDFA;
 }
