@@ -1,3 +1,13 @@
+@mixin font{
+    font-family: 'Open Sans', sans-serif;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @mixin xl {
     @media screen and (max-width: 980px) {
         @content;

@@ -1,5 +1,5 @@
 body .projet{
-    font-family: 'Open Sans', sans-serif;
+    @include font;
     margin: 50px 200px;
     padding: 20px 50px;
     border: 2px solid #FFE7CC;
@@ -28,9 +28,7 @@ body .projet .iframe{
 }
 
 .image{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
 }
 
 .content1{

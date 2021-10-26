@@ -1,0 +1,29 @@
+body .pres{
+    @include font;
+    video{
+        width: 50%;
+    }
+
+
+    h2{
+        @include flex-center;
+    }
+
+
+    .carousel{
+        @include flex-center;
+        margin: 50px 0px;
+        min-height: 100px;
+    }
+    
+    
+    .gallery_video{
+        width: 50%;
+    }
+
+    .arrow-pres{
+        height: 10%;
+        width: 10%;
+        cursor: pointer;
+    }
+}
