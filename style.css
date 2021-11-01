@@ -329,31 +329,6 @@ body .projet .iframe {
   .content2, .content5, .content8, .content11 {
     display: none;
   }
-
-  .title {
-    color: white;
-    display: block;
-  }
-
-  .title1 {
-    position: absolute;
-    top: 41%;
-  }
-
-  .title2 {
-    position: absolute;
-    top: 73%;
-  }
-
-  .title3 {
-    position: absolute;
-    top: 100%;
-  }
-
-  .title4 {
-    position: absolute;
-    top: 131%;
-  }
 }
 body .cv {
   margin: 30px;
