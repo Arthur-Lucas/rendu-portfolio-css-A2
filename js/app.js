@@ -101,81 +101,219 @@ function next() {
     }     
 }
 
-/* Possede la class ? */
-    function hasClass( target, className ) {
-        return new RegExp('(\\s|^)' + className + '(\\s|$)').test(target.className);
+    
+
+
+    /* Animation square, image & line1 */
+
+    var square = document.querySelectorAll('.square');
+    var line1 = document.querySelector('.line-square1');
+    var line2 = document.querySelector('.line-square2');
+    var line3 = document.querySelector('.line-square3');
+
+    var rightLine = document.querySelector('.right-line');
+    var leftLine = document.querySelector('.left-line');
+    var images = document.querySelectorAll('.image');
+
+
+    function image_appeared(){
+        
+            for (i = 0; i < square.length; ++i) {
+                if (square[i].classList.contains("rotate")){
+                images[i].style.backgroundColor = "#79A7B9"
+                }
+                else {
+                    images[i].style.backgroundColor = "#8fbacc30"
+                }
+            }  
+
     }
 
 
-    /* Animation square & line */
-
-    var square = document.querySelectorAll('.square');
-    var line = document.querySelector('.line-square');
-    line.style.width = "0%";
 
     square[0].addEventListener("click", () => {
-        if(hasClass(square[0], ".rotate") == false){
-            square[0].classList.toggle("rotate");
-        }
-        square[1].classList.remove("rotate");
-        square[2].classList.remove("rotate");
-        square[3].classList.remove("rotate");
-        line.style.width = "0%";
+
+        square[0].classList.add("rotate");
+        for (i = 1; i < square.length; ++i) {
+            square[i].classList.remove("rotate");
+            }
+
+        line1.style.width = "0%";
+        line2.style.width = "0%";
+        line3.style.width = "0%";
+        image_appeared();
+
     });
 
     square[1].addEventListener("click", () => {
-        if(hasClass(square[1], ".rotate") == false){
-            square[1].classList.toggle("rotate");
-            if(hasClass(square[0], ".rotate") == false){
-                square[0].classList.add("rotate");
-            }
+        
+        square[1].classList.add("rotate");
+        square[0].classList.add("rotate");
+        for (i = 2; i < square.length; ++i) {
+        square[i].classList.remove("rotate");
         }
-        square[2].classList.remove("rotate");
-        square[3].classList.remove("rotate");
-        if (line.style.width == "0%" || line.style.width == "50%" || line.style.width == "75%"){
-            line.style.width = "25%";
-        }
-        else if (line.style.width == "25%"){
-            line.style.width = "0%";
-        }
+        line1.style.width = "25%";
+        line2.style.width = "0%";
+        line3.style.width = "0%";
+        image_appeared();
+
+
     });
 
     square[2].addEventListener("click", () => {
-        if(hasClass(square[2], ".rotate") == false){
-            square[2].classList.toggle("rotate");
-            if(hasClass(square[0], ".rotate") == false){
-                square[0].classList.add("rotate");
-                if(hasClass(square[1], ".rotate") == false){
-                    square[1].classList.add("rotate");
-                }
+        
+        for (i = 0; i < 3; ++i) {
+            square[i].classList.add("rotate");
             }
-        }
-        square[3].classList.remove("rotate");
-        if (line.style.width == "0%" || line.style.width == "25%" || line.style.width == "75%"){
-            line.style.width = "50%";
-        }
-        else if (line.style.width == "50%"){
-            line.style.width = "25%";
-        }
+        for (i = 3; i < square.length; ++i) {
+            square[i].classList.remove("rotate");
+            }
+
+        line1.style.width = "50%";
+        line2.style.width = "0%";
+        line3.style.width = "0%";
+        image_appeared();
+
     });
 
     square[3].addEventListener("click", () => {
-        if(hasClass(square[3], ".rotate") == false){
-            square[3].classList.toggle("rotate");
-            if(hasClass(square[2], ".rotate") == false){
-                square[2].classList.add("rotate");
-                if(hasClass(square[0], ".rotate") == false){
-                    square[0].classList.add("rotate");
-                    if(hasClass(square[1], ".rotate") == false){
-                        square[1].classList.add("rotate");
-                    }
-                }
+     
+        for (i = 0; i < 4; ++i) {
+            square[i].classList.add("rotate");
             }
-        } 
-        if (line.style.width == "0%" || line.style.width == "25%" || line.style.width == "50%"){
-            line.style.width = "75%";
-        }
-        else if (line.style.width == "75%"){
-            line.style.width = "50%";
-        }
+        for (i = 4; i < square.length; ++i) {
+            square[i].classList.remove("rotate");
+            }
+
+        line1.style.width = "75%";
+        line2.style.width = "0%";
+        line3.style.width = "0%";
+        image_appeared();
+        
+    });
+
+
+    /* Section 2*/
+
+    square[4].addEventListener("click", () => {
+        
+        for (i = 0; i < 5; ++i) {
+            square[i].classList.add("rotate");
+            }
+        for (i = 5; i < square.length; ++i) {
+            square[i].classList.remove("rotate");
+            }
+
+        line1.style.width = "75%";
+        line2.style.width = "0%";
+        line3.style.width = "0%";
+        image_appeared();
+        
+    });
+
+    square[5].addEventListener("click", () => {
+        
+        for (i = 0; i < 6; ++i) {
+            square[i].classList.add("rotate");
+            }
+        for (i = 6; i < square.length; ++i) {
+            square[i].classList.remove("rotate");
+            }
+        line1.style.width = "75%";
+        line2.style.width = "25%";
+        line3.style.width = "0%";
+        image_appeared();
+        
+    });
+
+    square[6].addEventListener("click", () => {
+        
+        for (i = 0; i < 7; ++i) {
+            square[i].classList.add("rotate");
+            }
+        for (i = 7; i < square.length; ++i) {
+            square[i].classList.remove("rotate");
+            }
+        line1.style.width = "75%";
+        line2.style.width = "50%";
+        line3.style.width = "0%";
+        image_appeared();
+        
+    });
+
+    square[7].addEventListener("click", () => {
+        
+        for (i = 0; i < 8; ++i) {
+            square[i].classList.add("rotate");
+            }
+        for (i = 8; i < square.length; ++i) {
+            square[i].classList.remove("rotate");
+            }
+        line1.style.width = "75%";
+        line2.style.width = "75%";
+        line3.style.width = "0%";
+        image_appeared();
+        
+    });
+
+    /* Section 3 */
+
+    square[8].addEventListener("click", () => {
+        
+        for (i = 0; i < 9; ++i) {
+            square[i].classList.add("rotate");
+            }
+        for (i = 9; i < square.length; ++i) {
+            square[i].classList.remove("rotate");
+            }
+
+        line1.style.width = "75%";
+        line2.style.width = "75%";
+        line3.style.width = "0%";
+        image_appeared();
+        
+    });
+    square[9].addEventListener("click", () => {
+        
+        for (i = 0; i < 10; ++i) {
+            square[i].classList.add("rotate");
+            }
+        for (i = 10; i < square.length; ++i) {
+            square[i].classList.remove("rotate");
+            }
+
+        line1.style.width = "75%";
+        line2.style.width = "75%";
+        line3.style.width = "25%";
+        image_appeared();
+        
+    });
+    square[10].addEventListener("click", () => {
+        
+        for (i = 0; i < 11; ++i) {
+            square[i].classList.add("rotate");
+            }
+        for (i = 11; i < square.length; ++i) {
+            square[i].classList.remove("rotate");
+            }
+
+        line1.style.width = "75%";
+        line2.style.width = "75%";
+        line3.style.width = "50%";
+        image_appeared();
+        
+    });
+    square[11].addEventListener("click", () => {
+        
+        for (i = 0; i < 12; ++i) {
+            square[i].classList.add("rotate");
+            }
+        for (i = 12; i < square.length; ++i) {
+            square[i].classList.remove("rotate");
+            }
+        line1.style.width = "75%";
+        line2.style.width = "75%";
+        line3.style.width = "75%";
+        image_appeared();
+        
     });
