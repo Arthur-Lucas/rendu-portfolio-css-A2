@@ -330,11 +330,61 @@ body .projet .iframe {
     display: none;
   }
 }
+body {
+  font-size: 16px;
+}
+body .rotate {
+  transform: rotate(0.38turn);
+  background-color: white !important;
+  transition: 1s;
+}
 body .cv {
   margin: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10%;
+}
+body .competences {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: black;
+  height: 30rem;
+  width: 100%;
+}
+body .competences h2 {
+  margin: 0;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  padding: 5% 10%;
+}
+body .competences .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+body .competences .content .square {
+  border: 3px solid white;
+  background-color: black;
+  width: 3%;
+  aspect-ratio: 1;
+  transition: 1s;
+  z-index: 2;
+}
+body .competences .content .line-square {
+  position: absolute;
+  background-color: white;
+  border-radius: 10px;
+  width: 0%;
+  height: 1rem;
+  left: 12.5%;
+  z-index: 1;
+  transition: 1s;
+}
+body .front {
+  margin-top: 20%;
 }
 
 body .compet1 {

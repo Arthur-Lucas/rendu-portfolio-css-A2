@@ -100,3 +100,82 @@ function next() {
         movie.src = "../image/video-fnatic.mp4";   
     }     
 }
+
+/* Possede la class ? */
+    function hasClass( target, className ) {
+        return new RegExp('(\\s|^)' + className + '(\\s|$)').test(target.className);
+    }
+
+
+    /* Animation square & line */
+
+    var square = document.querySelectorAll('.square');
+    var line = document.querySelector('.line-square');
+    line.style.width = "0%";
+
+    square[0].addEventListener("click", () => {
+        if(hasClass(square[0], ".rotate") == false){
+            square[0].classList.toggle("rotate");
+        }
+        square[1].classList.remove("rotate");
+        square[2].classList.remove("rotate");
+        square[3].classList.remove("rotate");
+        line.style.width = "0%";
+    });
+
+    square[1].addEventListener("click", () => {
+        if(hasClass(square[1], ".rotate") == false){
+            square[1].classList.toggle("rotate");
+            if(hasClass(square[0], ".rotate") == false){
+                square[0].classList.add("rotate");
+            }
+        }
+        square[2].classList.remove("rotate");
+        square[3].classList.remove("rotate");
+        if (line.style.width == "0%" || line.style.width == "50%" || line.style.width == "75%"){
+            line.style.width = "25%";
+        }
+        else if (line.style.width == "25%"){
+            line.style.width = "0%";
+        }
+    });
+
+    square[2].addEventListener("click", () => {
+        if(hasClass(square[2], ".rotate") == false){
+            square[2].classList.toggle("rotate");
+            if(hasClass(square[0], ".rotate") == false){
+                square[0].classList.add("rotate");
+                if(hasClass(square[1], ".rotate") == false){
+                    square[1].classList.add("rotate");
+                }
+            }
+        }
+        square[3].classList.remove("rotate");
+        if (line.style.width == "0%" || line.style.width == "25%" || line.style.width == "75%"){
+            line.style.width = "50%";
+        }
+        else if (line.style.width == "50%"){
+            line.style.width = "25%";
+        }
+    });
+
+    square[3].addEventListener("click", () => {
+        if(hasClass(square[3], ".rotate") == false){
+            square[3].classList.toggle("rotate");
+            if(hasClass(square[2], ".rotate") == false){
+                square[2].classList.add("rotate");
+                if(hasClass(square[0], ".rotate") == false){
+                    square[0].classList.add("rotate");
+                    if(hasClass(square[1], ".rotate") == false){
+                        square[1].classList.add("rotate");
+                    }
+                }
+            }
+        } 
+        if (line.style.width == "0%" || line.style.width == "25%" || line.style.width == "50%"){
+            line.style.width = "75%";
+        }
+        else if (line.style.width == "75%"){
+            line.style.width = "50%";
+        }
+    });
