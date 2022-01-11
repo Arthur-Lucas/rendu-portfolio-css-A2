@@ -77,10 +77,20 @@ body section div > a {
 
 @include xl{
     body .home {
-        padding: 0px;
+        padding: 100px 0px 0px 0px;
         display: block;
         .item5 {
             display: none;
+        }
+        .item2{
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        div{
+            padding: 0 30px;
+        }
+        .btn{
+            padding: 30px;
         }
     }
 

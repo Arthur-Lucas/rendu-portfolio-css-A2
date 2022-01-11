@@ -133,8 +133,7 @@ header {
 
 @media screen and (max-width: 960px) {
   header {
-    background-position: 60% 100%;
-    margin-bottom: -180px;
+    display: none;
   }
 }
 body .home {
@@ -213,11 +212,21 @@ body section div > a {
 
 @media screen and (max-width: 960px) {
   body .home {
-    padding: 0px;
+    padding: 100px 0px 0px 0px;
     display: block;
   }
   body .home .item5 {
     display: none;
+  }
+  body .home .item2 {
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  body .home div {
+    padding: 0 30px;
+  }
+  body .home .btn {
+    padding: 30px;
   }
 
   .item1 {
@@ -304,7 +313,7 @@ body .projet .iframe {
 @media screen and (max-width: 960px) {
   body .projet {
     margin: 0px;
-    padding: 20px 0px;
+    padding: 100px 0px 0px 0px;
     background-color: #8fbacc30;
     border: none;
     display: flex;
@@ -503,6 +512,7 @@ body .pres .compet1 p {
 }
 body .pres .compet1 .image-sog {
   padding: 70px 0px;
+  margin: 0 10px;
   background-color: black;
 }
 body .pres h2 {
