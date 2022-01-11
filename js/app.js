@@ -131,11 +131,10 @@ function next() {
     }
 
 
-
     square[0].addEventListener("click", () => {
 
         square[0].classList.add("rotate");
-        for (i = 1; i < 4; ++i) {
+        for (i = 1; i < 5; ++i) {
             square[i].classList.remove("rotate");
             }
 
