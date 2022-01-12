@@ -121,10 +121,12 @@ function next() {
         
             for (i = 0; i < square.length; ++i) {
                 if (square[i].classList.contains("rotate")){
-                images[i].style.backgroundColor = "#79A7B9"
+                images[i].style.backgroundColor = "#79A7B9";
+                images[i].style.color = "white";
                 }
                 else {
                     images[i].style.backgroundColor = "#8fbacc30"
+                    images[i].style.color = "#8fbacc30";
                 }
             }  
 

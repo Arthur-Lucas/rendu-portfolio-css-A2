@@ -17,6 +17,10 @@ body {
         font-size: 24px;
         color: white;
         font-weight: 900;
+        iframe{
+            padding: 2%;
+            border: 5px solid white;
+        }
     }
 
 
@@ -104,6 +108,7 @@ body {
                 }
                 .image:first-child{
                     background-color: #79A7B9;
+                    color: white;
                 }
             }
         
@@ -112,56 +117,71 @@ body {
     }
 }
 
-body .compet1{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 50px;
-    background-color: $backgroundColor;
-    @include font;
-    p{
-        font-size: 24px;
-    }
-    
-    .seed1    img {
-        width: 800px;
-        margin: 20px;
-    }
-    
-}
 
-body .compet2{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 50px;
-    background-color: $backgroundColor;
-    font-family: 'Open Sans', sans-serif;
-    p{
-        font-size: 24px;
-    }
-    
-    .block1    img {
-        width: 800px;
-        margin: 20px;
-    }
-    .block2{
-        text-align: end;
-    }
-}
 
 @include xl{
-    body .cv{
-        margin-top: 200px;
-    }
-    body .compet1, .compet2{
-        display: flex;
-        flex-direction: column;
-        .seed2, .block2{
-            text-align: center !important;
+    body {
+        .cv{
+            margin-top: 25%;
+            p{
+                margin-block-end: 0.5rem;
+                padding-bottom: 0.5rem;
+                border-bottom: 5px solid white;
+            }
+            iframe{
+                width: 90%;
+                height: 190px;
+                padding: 5% 0;
+                border: none;
+            }
         }
-        img{
-            display: none;
+
+        .competences-section{
+            h2{
+                font-size: 24px;
+                margin: 4% 4% 4% 5%;
+                padding: 1% 1% 1% 0%;
+                border-bottom: 5px solid white;
+            }
+            #front{
+                display: grid;
+                grid-template-columns: 50% 50%;
+                grid-template-rows: 50rem ;
+            }
+            .competences{
+                display: grid;
+                grid-template-columns: 50% 50%;
+                grid-template-rows: 40rem;
+                .content{
+                    flex-direction: column;
+                    grid-row: 1 / -1;
+                    grid-column: 2 / 3;
+                    span{
+                        display: none;
+                    }
+                    .square{
+                        width: 10%;
+                    }
+                }
+                .image-section{
+                    flex-direction: column;
+                    align-items: flex-end;
+                    grid-row: 1 / -1;
+                    grid-column: 1 / 2;
+                    .image {
+                        width: 75%;
+                        font-size: 18px;
+                        .fab, .fas{
+                            font-size: 54px;
+                            margin-block-start: 0.5rem;
+                        }
+                        .p{
+                            margin-block-start: 0.5rem;
+                        }
+                    }
+                } 
+            } 
         }
-    }
+        } 
+
 }

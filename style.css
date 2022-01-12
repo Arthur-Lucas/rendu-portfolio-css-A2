@@ -358,6 +358,10 @@ body .cv {
   color: white;
   font-weight: 900;
 }
+body .cv iframe {
+  padding: 2%;
+  border: 5px solid white;
+}
 body .competences-section {
   padding: 3% 0%;
   background: #8fbacc;
@@ -439,57 +443,67 @@ body .competences-section .competences .image-section .image .fab, body .compete
 }
 body .competences-section .competences .image-section .image:first-child {
   background-color: #79A7B9;
-}
-
-body .compet1 {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin: 50px;
-  background-color: #8fbacc30;
-  font-family: "Open Sans", sans-serif;
-}
-body .compet1 p {
-  font-size: 24px;
-}
-body .compet1 .seed1 img {
-  width: 800px;
-  margin: 20px;
-}
-
-body .compet2 {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin: 50px;
-  background-color: #8fbacc30;
-  font-family: "Open Sans", sans-serif;
-}
-body .compet2 p {
-  font-size: 24px;
-}
-body .compet2 .block1 img {
-  width: 800px;
-  margin: 20px;
-}
-body .compet2 .block2 {
-  text-align: end;
+  color: white;
 }
 
 @media screen and (max-width: 960px) {
   body .cv {
-    margin-top: 200px;
+    margin-top: 25%;
   }
-
-  body .compet1, .compet2 {
-    display: flex;
+  body .cv p {
+    margin-block-end: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 5px solid white;
+  }
+  body .cv iframe {
+    width: 90%;
+    height: 190px;
+    padding: 5% 0;
+    border: none;
+  }
+  body .competences-section h2 {
+    font-size: 24px;
+    margin: 4% 4% 4% 5%;
+    padding: 1% 1% 1% 0%;
+    border-bottom: 5px solid white;
+  }
+  body .competences-section #front {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50rem;
+  }
+  body .competences-section .competences {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 40rem;
+  }
+  body .competences-section .competences .content {
     flex-direction: column;
+    grid-row: 1/-1;
+    grid-column: 2/3;
   }
-  body .compet1 .seed2, body .compet1 .block2, .compet2 .seed2, .compet2 .block2 {
-    text-align: center !important;
-  }
-  body .compet1 img, .compet2 img {
+  body .competences-section .competences .content span {
     display: none;
+  }
+  body .competences-section .competences .content .square {
+    width: 10%;
+  }
+  body .competences-section .competences .image-section {
+    flex-direction: column;
+    align-items: flex-end;
+    grid-row: 1/-1;
+    grid-column: 1/2;
+  }
+  body .competences-section .competences .image-section .image {
+    width: 75%;
+    font-size: 18px;
+  }
+  body .competences-section .competences .image-section .image .fab, body .competences-section .competences .image-section .image .fas {
+    font-size: 54px;
+    margin-block-start: 0.5rem;
+  }
+  body .competences-section .competences .image-section .image .p {
+    margin-block-start: 0.5rem;
   }
 }
 body {
