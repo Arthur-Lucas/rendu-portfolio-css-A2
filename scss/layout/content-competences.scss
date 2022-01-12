@@ -56,6 +56,9 @@ body {
                     transition: 1s;
                     z-index: 2;
                 }
+                .square:hover{
+                    background-color: #0c4c6744;
+                }
                 .line-square1{
                     position: absolute;
                     background-color: white;

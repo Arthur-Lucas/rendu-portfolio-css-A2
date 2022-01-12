@@ -395,6 +395,9 @@ body .competences-section .competences .content .square {
   transition: 1s;
   z-index: 2;
 }
+body .competences-section .competences .content .square:hover {
+  background-color: #0c4c6744;
+}
 body .competences-section .competences .content .line-square1 {
   position: absolute;
   background-color: white;
