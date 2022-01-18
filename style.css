@@ -520,6 +520,8 @@ body .pres video {
   width: 50%;
 }
 body .pres .compet1 {
+  display: grid;
+  grid-template-columns: 40% 60%;
   background-color: #8fbacc30;
   padding: 10px;
   border-radius: 10px;
@@ -528,9 +530,31 @@ body .pres .compet1 p {
   color: #0c4c67;
 }
 body .pres .compet1 .image-sog {
-  padding: 70px 0px;
-  margin: 0 10px;
-  background-color: black;
+  background: url("image/sog.png");
+}
+body .pres .compet1 .image-secret {
+  background: url("image/secret.jpg");
+}
+body .pres .compet1 .image-fnc {
+  background: url("image/fnc.png");
+}
+body .pres .compet1 .image-nh {
+  background: url("image/logo.png");
+}
+body .pres .compet1 .seed1 {
+  min-height: 300px;
+  grid-row: 1/-1;
+  grid-column: 1/2;
+  margin: 5%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body .pres .compet1 p {
+  grid-row: 1/-1;
+  grid-column: 2/3;
+  display: flex;
+  align-items: center;
 }
 body .pres h2 {
   margin: 40px;
@@ -562,9 +586,10 @@ body .pres .arrow-pres {
 
 @media screen and (max-width: 960px) {
   body .pres {
-    margin: 200px 20px 20px 20px;
+    margin: 100px 20px 20px 20px;
   }
   body .pres .compet1 {
+    display: flex;
     margin: 50px 10px;
     background-color: #8fbacc30;
   }
